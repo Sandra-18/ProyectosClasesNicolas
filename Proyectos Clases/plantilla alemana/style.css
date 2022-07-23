@@ -1,0 +1,63 @@
+body{
+    margin: auto;
+}
+.containerNav{
+    display: flex;
+    background-color:#28414f;
+    justify-content: space-between;
+    align-items: center;
+}
+.containerLeft{
+    margin-left: 7%;
+    width: 40%;
+}
+.containerNav a{
+    text-decoration: none;
+    color:white;
+    opacity: 0.8;
+    font-size: 16px;
+    margin-left: 2%;
+}
+.nav-link1{
+    border-right: 1px solid white;
+    opacity: 0.8;
+    font-size: 16px;
+    padding-right: 4%;
+}
+.nav-link2{
+    border-right: 1px solid white;
+    opacity: 0.8;
+    font-size: 16px;
+    padding-right: 4%;
+}
+.containerInRight{
+    display: flex;
+    margin-right: 6%;
+    width: 23%;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerInRight div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+
+}
+.containerInRight div p{
+    color: white;
+    opacity: 0.8;
+    font-size: 16px;
+    
+}
+.containerInSon1{
+
+}
+.containerInSon2{
+
+}
+.containerInSon3{
+    width: 20px;
+    height: 3vh;
+}

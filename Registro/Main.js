@@ -104,6 +104,8 @@ class Persona{
         return proyectosConsulta;
     }
 }
+ 
+
 
 var GestorLS = new GestorLocalStorage();
 
@@ -145,6 +147,7 @@ SelectPersona.change(() => {
 
 FrmRegistroPersona.submit((evento) => {
     var PersonaCrear = new Persona(NombresPersonaCrear.val(), ApellidosPersonaCrear.val(), IdPersonaRegistro.val());
+    console.log(PersonaCrear);
     GestorLS.AgregarPersona(PersonaCrear);
     AgregarPersonaAlCombo(PersonaCrear);
     OpcionPersonaSeleccionada = PersonaCrear.IdPersona;

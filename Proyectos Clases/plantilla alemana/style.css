@@ -9,7 +9,7 @@ body{
 }
 .containerLeft{
     margin-left: 7%;
-    width: 40%;
+    width: 55%;
 }
 .containerNav a{
     text-decoration: none;
@@ -20,44 +20,98 @@ body{
 }
 .nav-link1{
     border-right: 1px solid white;
-    opacity: 0.8;
-    font-size: 16px;
+    /* opacity: 0.8;
+    font-size: 16px; */
     padding-right: 4%;
 }
 .nav-link2{
     border-right: 1px solid white;
-    opacity: 0.8;
-    font-size: 16px;
+    /* opacity: 0.8;
+    font-size: 16px; */
     padding-right: 4%;
 }
 .containerInRight{
     display: flex;
-    margin-right: 6%;
-    width: 23%;
+    /* margin-right: 4%; */
+    width: 28%;
     justify-content: center;
     align-items: center;
-}
-
-.containerInRight div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10%;
-
 }
 .containerInRight div p{
     color: white;
     opacity: 0.8;
     font-size: 16px;
-    
+}
+.InSoncontenedor{
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    width: 100%;
 }
 .containerInSon1{
-
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    gap: 12%;
+    width: 40%;
 }
 .containerInSon2{
-
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    gap: 12%;
 }
 .containerInSon3{
     width: 20px;
     height: 3vh;
+}
+
+
+
+
+.containerUp{
+    background-image: url("img/fondos1.1.png");
+    background-size: cover;
+    height: 70vh;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.upFirst{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.upFirst2{
+    background-color: lightgray;
+    width: 60px;
+    height: 60px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upSecond{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 20vh;
+}
+.upSecond2{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+.upSecondHijo1{
+    display: flex;
+}
+.son1{
+    
+}
+
+
+
+
+
+
+.containerDown{
+    height: 30vh;
 }

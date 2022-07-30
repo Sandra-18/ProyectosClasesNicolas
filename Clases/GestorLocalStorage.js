@@ -1,5 +1,4 @@
-export default class GestorLocalStorage
-{
+export default class GestorLocalStorage{
     ClavePersonas = "Personas";
     ClaveProyectos = "Proyectos";
     proyectos;
@@ -35,7 +34,7 @@ export default class GestorLocalStorage
         }
         return this.Proyectos;
     }
-    ConsultarPeroyectosByPersona(IdPersona)
+    ConsultarProyectosByPersona(IdPersona)
     {
         this.ConsultarProyectos();
         var proyectos = [];

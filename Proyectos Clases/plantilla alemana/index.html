@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<link rel="stylesheet" href="style.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gurajada&family=Philosopher:wght@700&family=Poppins:wght@700&family=Roboto:wght@500&family=Teko&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gurajada&family=Philosopher:wght@700&family=Poppins:wght@700&family=Roboto:wght@500&family=Smooch&family=Teko&display=swap" rel="stylesheet">
+
 	<title>
 		
 	</title>
@@ -50,40 +58,88 @@
 							</div>
 						</div>
 					</div>
-	
-					<div class="upSecond">
-						<div class="upSecond2">
-							<div>
-								<p>Giris yap veya kayit ol</p>
-							</div>
-							<div class="upSecondHijo1">
-								<div>
-									<img class="son1" src="" alt="">
-									<p>+90</p>
+					<div class="containerUpSecond">
+						<div class="upSecond">
+							<div class="upSecond2">
+								<div class="upSecondHijo">
+									<p>Giriş yap veya kayıt ol</p>
 								</div>
-								<div>
-									<input type="text" placeholder="Telefon Numarasi">
+								<div class="upSecondHijo1">
+									<div class="upSecondHijo1InternoIzquierdo">
+										<img src="img/lunaroja.png">
+										<p>+90 </p>
+										<div class="vector"><img src="img/down.png" alt=""></div>
+									</div>
+									<div class="upSecondHijo1InternoDerecho">
+										<input type="text" placeholder="Telefon Numarasi" class="telefhone">
+									</div>
 								</div>
-							</div>
-							<div>
-								<button>Telefon Numarasi ile devan et</button>
+								<div class="upSecondHijo2">
+									<button class="botContainer2">Telefon Numarasi ile devan et</button>
+								</div>
 							</div>
 						</div>
 					</div>
-
-
-
-
-
-	
-					<div>
-						<h1></h1>
-						<p></p>
+					<div class="upThird">
+						<h1>TEKNENDE HAYAT EViNDEN DAHA RAHAT</h1>
+						<p>Bir  Sonraki  Fikrinizi  Deneyimleyin</p>
 					</div>
 				</div>
-				<div class="containerDown"></div>
+				<div class="containerDown" id="containerDown">
+					<div class="containerDownIn"><img src="img/Vector-1.png" alt=""></div>
+				</div>
+				<div class="veTek">
+					<div class="veTekFirst">
+						<img src="img/Vector.png" alt="">
+						<p>İLK VE TEK</p>
+						<img src="img/Vector (11).png" alt="">
+					</div>
+					<div class="veTekSecond">
+						<img src="img/Vector-4.png" alt="">
+						<p>İŞ ORTAKLARIMIZ</p>
+						<img src="img/Vector-3.png" alt="">
+					</div>
+					<div class="veTekThird">
+						<img src="img/carbon.png" alt="">
+						<p>YALNIZ DEĞİLSİNİZ</p>
+						<img src="img/Vector (11).png" alt="">
+					</div>
+				</div>
+
+				
 			</div>
 		</section>
 	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<script>
+		// 		let contenedor = "";
+		// 		let imagenes = [
+		// 			"<img src='img/liverpool.png'>",
+		// 			"<img src='img/liverpool.png'>",
+		// 			"<img src='img/liverpool.png'>",
+		// 		]
+
+		// 		for (let i = 0; i < imagenes.length; i++){
+		// 		// console.log(imagenes[i]);
+		// 		contenedor += imagenes[i] ;
+		// }
+
+		// 		document.getElementById('containerDown').innerHTML = contenedor
+			
+		$('.containerDown').html("<div class='containerscript'></div><div class='containerscript1'></div><div class='containerscript2'></div>");
+		$('.containerscript').css("background-image", "url('img/liverpool.png')");
+		$('.containerscript1').css("background-image", "url('img/liverpool2.png')");
+		$('.containerscript2').css("background-image", "url('img/liverpool3.png')");
+	</script>
 </body>
 </html>

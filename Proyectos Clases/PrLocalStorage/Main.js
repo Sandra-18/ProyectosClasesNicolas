@@ -51,6 +51,12 @@ class GestorLocalStorage
         }
         return valorLocalSotage;
     }
+
+    eliminarValor()
+    {
+        localStorage.removeItem(this.clave);
+        //localStorage.setItem(this.clave,"");
+    }
 }
 
 // Relacion con el primer formulario  que registra de la primera forma
@@ -62,6 +68,15 @@ var fmrInputValor = $("#Valor");
 var fmrRegistroSv = $("#FmrRegistroSv");
 var fmrSvInputClave = $("#ClaveSv");
 var fmrSvInputValor = $("#ValorSv");
+
+// Relacion con los imput de consulta
+var inputClaveConsulta = $("#ClaveConsulta");
+var pDatosConsulta = $("#DatosConsulta");
+var BtnConsulta = $("#BtnConsulta");
+// Relacion con los imput de eliminar
+var inputClaveEliminar = $("#ClaveEliminar");
+var BtnEliminar = $("#BtnEliminar");
+
 
 
 //Evento submit del primer formulario
@@ -84,6 +99,21 @@ fmrRegistroSv.submit((evento) =>{
     alert(respuestaRegistraPv);
 
     evento.preventDefault();
+});
+
+
+//Evento boton consulta
+BtnConsulta.click((evento) =>{
+    let gestorLS = new GestorLocalStorage(inputClaveConsulta.val());
+    var datos = gestorLS.consultarValor();
+    pDatosConsulta.append(datos);
+});
+
+//Evento boton eliminar
+BtnEliminar.click((evento) =>{
+    let gestorLS = new GestorLocalStorage(inputClaveEliminar.val());
+    gestorLS.eliminarValor();
+    alert("Datos Eliminados");
 });
 
 

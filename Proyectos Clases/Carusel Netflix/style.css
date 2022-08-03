@@ -1,0 +1,96 @@
+*{
+    color: white;
+    font-size: 10px;
+    margin: auto;
+}
+
+body{
+    background-color: black;
+    margin: 20px;
+} 
+iframe{
+    border: 0px;
+    border-top: 5px solid darkred;
+}
+.pelicula{
+    border: 1px solid red;
+}
+.pelicula img{
+    width: 240px; 
+    height: 340px;
+}.contenido{
+    display: none;
+
+}
+.contenedorPeliculas{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.genero{
+    
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid darkred;
+    
+}
+.suspenso {
+    border-right: 3px solid darkred;
+    border-left: 3px solid darkred;
+    padding: 0 15px 0 15px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.año{
+    display: flex;
+    align-items: center;
+}
+.año h5 {
+    margin: 0;
+    margin-right: 3px;
+}
+.año p{
+    margin: 0px;
+}
+.descripcion {
+    text-align: justify;
+    /* margin-bottom: ; */
+}
+.poppup{
+    display: none;
+    width: 20vw;
+    height: 50vh;
+    background: black;
+    z-index: 999999;
+    border: 1px solid darkred;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.start{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}

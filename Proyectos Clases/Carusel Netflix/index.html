@@ -15,7 +15,7 @@
 <body>
     <div class="owl-carousel owl-theme">
         <div class="pelicula">
-            <img src="img/Destino_final.png" class="imagen">
+            <img src="img/Destino_final.png" class="imagen" style=" width: 240px; height: 340px;">
             <div class="contenido">
                 <iframe src="https://www.youtube.com/embed/pCiWxIHw7bQ" width="100%" ></iframe>
                 
@@ -47,10 +47,9 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="pelicula">
-            <img src="img/demaciado_grande.jpg" class="imagen">
+            <img src="img/demaciado_grande.jpg" class="imagen" style=" width: 240px; height: 340px;">
             <div class="contenido">
                 <iframe src="https://www.youtube.com/embed/0WMahx76QJk" width="100%" ></iframe>
                 
@@ -82,13 +81,11 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="pelicula">
             <img src=" img/malefico.jpg"  class="imagen">
             <div class="contenido">
                 <iframe src="https://www.youtube.com/embed/RZq-5A8Zo-o" width="100%" ></iframe>
-                
                 <div class="contenedorPeliculas">
                     <div class="start">
                         <p>1h 51m</p>
@@ -117,7 +114,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="pelicula">
             <img src="img/hombredegris.jpg"  class="imagen">
@@ -234,8 +230,8 @@
             items:6,
             loop:true,
             margin:10,
-            // autoplay:true,
-            // autoplayTimeout:3000,
+            autoplay:true,
+            autoplayTimeout:3000,
             autoplayHoverPause:true
         });
         $('.play').on('click',function(){
@@ -252,21 +248,21 @@
 
 
 
-        $('.pelicula').click(function(){
+        $('.pelicula').mouseover(function(){
             $('.poppup').show();
             let html = $(this).html();
             // let img = $('.imagen').this();
             $('.poppup').html(html);
             $('.poppup > .contenido ').show();
-            $('.poppup > .pelicula > .imagen').hide();
-            // $('img').hide();
+            $('.poppup > .imagen').hide();
+       
             
             $('.poppup').append('<button onclick="cerrar()">Cerrar</button>');
         });
 
         function cerrar(){
             $('.poppup').hide();
-            $('img').show();
+        
         }
 
     </script>

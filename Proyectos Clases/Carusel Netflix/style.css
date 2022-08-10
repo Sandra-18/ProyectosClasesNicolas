@@ -10,17 +10,17 @@ body{
 } 
 iframe{
     border: 0px;
-    border-top: 5px solid darkred;
+    border-top: 1px solid darkred;
 }
 .pelicula{
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .pelicula img{
     width: 240px; 
     height: 340px;
-}.contenido{
+}
+.contenido{
     display: none;
-
 }
 .contenedorPeliculas{
     margin-left: 15px;
@@ -59,7 +59,7 @@ iframe{
 }
 .poppup{
     display: none;
-    width: 20vw;
+    width: 18vw;
     height: 50vh;
     background: black;
     z-index: 999999;

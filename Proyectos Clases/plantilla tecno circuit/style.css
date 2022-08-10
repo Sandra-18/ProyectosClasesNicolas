@@ -1,0 +1,342 @@
+body{
+    display: none;
+    /* margin: auto; */
+}
+
+@media screen and (max-width: 600px){
+
+    body{
+        margin: 0;
+        display: block;
+        background-image: url(img/color.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #contenedor1{
+        /* display: flex; */
+        /* justify-content: center; */
+        height: 100vh;
+    }
+    .containerSuperior{
+         height: 30vh;
+         display: flex;
+         justify-content: center;
+    }
+    .internoIzquierdoC1{
+        font-family:'Philosopher', sans-serif;
+        color: white;
+        text-align: center;
+        align-content: center;
+        align-self: end;
+    }
+    .internoIzquierdoC1 h1 h2 p{
+        margin: auto;
+    }
+    .internoIzquierdoC1 h1{
+        margin: auto;
+        font-size: 65px;
+        margin-bottom: -15px;
+    }
+    .internoIzquierdoC1 h2{
+        margin: auto;
+        font-size: 22px;
+    }
+    .internob{
+        font-family: 'Roboto';
+        font-weight: normal;
+        font-size: 23px;
+    }
+    .internoIzquierdoC1 h2 span{
+        font-size: 40px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+    }
+    .internoIzquierdoC1 p{
+        margin: auto;
+    }
+    .libre {
+        font-size: 13px;
+    }
+    .imageActividad{
+        align-self: end;
+        margin-bottom: 45px;
+    }
+    .containerCentral{
+        height: 45vh;
+    }
+    .contenedor2{
+        height: 50vh;
+    }
+    .compu{
+        position: absolute;
+        top: 4vh;
+        left: 10%;
+        z-index: 1;
+    }
+    .diadema{
+        position: absolute;
+        top: 1%;
+        left: 56%;
+        z-index: 3;
+    }
+    .consola{
+        position: absolute;
+        top: 13vh;
+        left: 35%;
+        z-index: 2;
+    }
+    .parlante{
+        position: absolute;
+        top: 56%;
+        left: 5%;
+        z-index: 4;
+    }
+    .topos{
+        position: absolute;
+        top: 66%;
+        left: 26%;
+        z-index: 5;
+    }
+    .control{
+        position: absolute;
+        top: 62%;
+        left: 50%;
+        z-index: 1;
+    }
+    .owl-nav{
+        position: absolute;
+        left: 50%;
+        top: 84vh;
+    }
+    .owl-dots{
+        position: absolute;
+        left: 40%;
+        top: 58vh;
+    }
+    .containerDown{
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .containerDown p{
+        color: white;
+        font-size: 7px;
+    }
+    .containerDown button{
+        width: 73%;
+        padding: 2vh;
+        background: #FFFFFF;
+        border-radius: 65px;
+        border: none;
+        margin-top: 24px;
+        color: orange;
+    }
+    .containerSkip{
+        width: 100%;
+        height: 15vh;        
+    }
+    .skip{
+        color: white;
+        display: flex;
+        justify-content: right;
+        margin-right: 30px;
+        padding-top: 20px;
+
+    }
+    .skip a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    
+    .owl-dot:active{
+    }
+    /* .owl-dot span{
+        background: orangered;
+        width: 25px;
+    } */
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background-color: orangered !important;
+        width: 25px;
+    }
+    /* aqui termina Splash Screen */
+    .lupa{
+        background-image: url(img/Vector.png);
+        background-size: 25px 25px;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 6vh;
+        border: none;
+        background-position-y: center;
+        background-position-x: 16px;
+        padding-left: 60px;
+        border-radius: 50px;
+    }
+    ::placeholder{
+        color: lightgray;
+    }
+    
+    .primerContenedor{
+
+        display: flex;
+        height: 11vh;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .inpu{
+        width: 80%;
+        height: 6vh;
+    }
+    .campa{
+        background: white;
+        width: 47px;
+        height: 47px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .punto{
+        display: none;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        left: 95%;
+        top: 3vh;
+    }
+    .contenedorParaTamano{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2vh;
+    }
+    .segundoContenedor{
+        display: flex;
+        background: linear-gradient(98.57deg, #CE048C -4.59%, #4D0A8E 101.92%);
+        border-radius: 26px;
+        height: 20vh;
+        width: 93%;
+    }
+    .segundoInternoIzquierdo{
+        padding-left: 5%;
+        padding-right: 4%;
+    }
+    .letraCircuit {
+        font-family: 'Roboto', sans-serif;
+        font-size: medium;
+        font-style: italic;
+        margin: 0;
+        margin-top: 2vh;
+        color: orange;
+        font-size: 42px;
+        margin-left: -5px;
+    }
+    .contenedorDescuento{
+        display: flex;
+        color: white;
+        align-items: baseline;
+    }
+    p.cantidadDescuento{
+        font-size: 20px;
+        margin: 0;
+    }
+    p.palDescuento{
+        margin: 0;
+        font-size: 14px;
+    }
+    p.inTecnology{
+        margin: 0;
+        color: white;
+        font-size: 17px;
+    }
+    .contenedorFree{
+        background: white;
+        color: orange;
+        border-radius: 40px;
+        font-size: 6px;
+        text-align: center;
+        margin-top: 6px;
+        width: 90%;
+    }
+    .contenedorFree p{
+        margin: 0;
+    }
+    img.imgair{
+        position: absolute;
+        top: 70px;
+        left: 27%;
+    }
+    img.imgconso{
+        position: absolute;
+        top: 11vh;
+        left: 52%;
+    }
+    img.imgaud{
+        position: absolute;
+        top: 24vh;
+        left: 70%;
+    }
+    .scroll{
+        display: flex;
+        align-items: center;
+        height: 10vh;
+        font-size: 15px;
+        overflow-x: scroll;
+    }
+    .scrollhijo{
+        border-radius:  50px;
+        background-color: white;
+        width: max-content;
+        padding: 6px 15px 6px 15px;
+    }
+    .scrollhijo p{
+        margin: 0;
+    }
+    .scroll div{
+        margin-left: 3%;
+    }
+    .padreContenedor3{
+        height: 20vh;
+    }
+    /* ------------------------------ */
+    .padreContenedor3{
+        height: 20vh;
+    }
+    .contenedor3{
+        width: 97%;
+        height: 20vh;
+        background-color: #CFCFCF;
+        opacity: 0.2;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+    .contenedorFree2 {
+        background: white;
+        color: orange;
+        border-radius: 40px;
+        font-size: 6px;
+        text-align: center;
+        margin-top: 6px;
+        width: max-content;
+    }
+    div.owl-item{
+        width: 33%;
+    }
+    .descrip{
+       font-size: 10px;
+       width: max-content;
+    }
+    .hot{
+        color: #343A40;
+        font-family: 'Roboto';
+        font-style: italic;
+        font-size: 16px;
+    }
+    .precio{
+        width: max-content;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}

@@ -103,11 +103,11 @@ body{
         left: 50%;
         z-index: 1;
     }
-    .owl-nav{
+    /* .owl-nav{
         position: absolute;
         left: 50%;
         top: 84vh;
-    }
+    } */
     .owl-dots{
         position: absolute;
         left: 40%;
@@ -150,8 +150,8 @@ body{
         text-decoration: none;
     }
     
-    .owl-dot:active{
-    }
+    /* .owl-dot:active{
+    } */
     /* .owl-dot span{
         background: orangered;
         width: 25px;
@@ -225,15 +225,16 @@ body{
     }
     .letraCircuit {
         font-family: 'Roboto', sans-serif;
-        font-size: medium;
         font-style: italic;
         margin: 0;
-        margin-top: 2vh;
+        margin-top: 4vh;
         color: orange;
         font-size: 42px;
         margin-left: -5px;
     }
     .contenedorDescuento{
+        font-family: 'Roboto';
+        font-style: normal;
         display: flex;
         color: white;
         align-items: baseline;
@@ -247,25 +248,40 @@ body{
         font-size: 14px;
     }
     p.inTecnology{
+        font-family: 'Roboto';
+        font-style: normal;
         margin: 0;
         color: white;
         font-size: 17px;
     }
     .contenedorFree{
+        width: 70px;
         background: white;
         color: orange;
         border-radius: 40px;
         font-size: 6px;
         text-align: center;
         margin-top: 6px;
-        width: 90%;
+        padding: 2px;
     }
     .contenedorFree p{
         margin: 0;
     }
+    .valid{
+        font-family: 'Roboto';
+        font-style: normal;
+        display: flex;
+        color: white;
+        width: 330px;
+        justify-content: center;
+        height: 15px;
+        align-items: end;
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
     img.imgair{
         position: absolute;
-        top: 70px;
+        top: 84px;
         left: 27%;
     }
     img.imgconso{
@@ -275,15 +291,17 @@ body{
     }
     img.imgaud{
         position: absolute;
-        top: 24vh;
+        top: 25.5vh;
         left: 70%;
     }
     .scroll{
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         height: 10vh;
         font-size: 15px;
         overflow-x: scroll;
+        font-family: 'Roboto';
+        font-style: normal;
     }
     .scrollhijo{
         border-radius:  50px;
@@ -297,46 +315,83 @@ body{
     .scroll div{
         margin-left: 3%;
     }
+    .scroll::-webkit-scrollbar {
+        width: 0;
+    }
     .padreContenedor3{
         height: 20vh;
     }
     /* ------------------------------ */
     .padreContenedor3{
         height: 20vh;
+        margin-left: 5%;
     }
     .contenedor3{
-        width: 97%;
-        height: 20vh;
-        background-color: #CFCFCF;
-        opacity: 0.2;
-        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 120px;
+        height: 135px;
+        background: #cfcfcf30;
+        box-shadow: inset 0 3px 0px rgb(0 0 0 / 3%);
         border-radius: 10px;
+        padding: 5px;
     }
-    .contenedorFree2 {
+    .contenedorFree2 p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 12px;
         background: white;
         color: orange;
         border-radius: 40px;
         font-size: 6px;
-        text-align: center;
         margin-top: 6px;
-        width: max-content;
+        
     }
     div.owl-item{
         width: 33%;
     }
-    .descrip{
-       font-size: 10px;
-       width: max-content;
-    }
     .hot{
+        display: flex;
+        align-items: center;
+        height: 30px;
         color: #343A40;
         font-family: 'Roboto';
         font-style: italic;
         font-size: 16px;
     }
+    .info{
+        font-family: 'Roboto';
+        font-style: normal;
+        margin: 5px;
+        
+    }
+    .descrip{
+        width: max-content;
+        font-size: 10px;
+        margin: 0;
+    }
     .precio{
         width: max-content;
         font-size: 12px;
         font-weight: bold;
+        margin-top: 2px;
     }
+    .portatil{
+        text-align: -webkit-center;
+    }
+    .portatil img{
+        width: auto !important;
+    }
+    .padreContenedor3 .contCarrusel .owl-theme .owl-nav{
+        display: none;
+    }
+    .padreContenedor3 .contCarrusel .owl-theme .owl-dots {
+        /* text-align: center; */
+        /* -webkit-tap-highlight-color: transparent; */
+        position: absolute;
+        left: 65%;
+        top: -3vh;
+    }
+    
+    
 }

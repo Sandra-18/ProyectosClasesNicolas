@@ -224,23 +224,45 @@
             </div>
         </section>
         <section>
-            <div class="contenedorhijo">
-                <div class="viewed"><p>Recently viewed</p></div>
-                <div class="contCarrusel2">
-                    <div class="owl-carousel owl-theme">
+            <div class="contenedor4">
+                <div class="viewed">
+                    <p>
+                        <b>Recently viewed</b>
+                    </p>
+                </div>
+                <div class="contAbajo4">
                         <div class="item">
-                            <div class="like">
-                                <img src="img/Layer 51.png">
+                            <div class="contlike">
+                                <div class="like">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                      </svg>
+                                </div>
                             </div>
                             <div class="producto">
-                                <img src="img/laptop2.png">
+                                <img src="img/laptop2.png" style="width: 122px; height: 92px;">
                             </div>
                             <div class="infoProd">
                                 <p>Huawei Matebook X 13</p>
                                 <p>$ 15,999</p>
                             </div>
                         </div>
-                    </div>
+                        <div class="item">
+                            <div class="contlike">
+                                <div class="like">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                      </svg>
+                                </div>
+                            </div>
+                            <div class="producto">
+                                <img src="img/d_cc 1.png" style="width: 122px; height: 92px;">
+                            </div>
+                            <div class="infoProd">
+                                <p>Huawei Matebook X 13</p>
+                                <p>$ 15,999</p>
+                            </div>
+                        </div>
                 </div>    
             </div>
         </section>
@@ -251,28 +273,40 @@
         
     </div>
     <script>
-          $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:40,
-            responsiveClass:true,
-            responsive:{
-                0:{
-                    items:1,
-                },
-                400:{
-                    items:3,
-                    nav:true,
-                }
-            }
-        });
-        $('.campa').mouseover(function(){
-            $('.punto').show();
-        });
 
-        $('.campa').mouseout(function(){
-            $('.punto').hide();
-        
-        });
+            // $('.owl-carousel').owlCarousel({
+            //     loop:true,
+            //     margin:40,
+            //     responsiveClass:true,
+            //     responsive:{
+            //         0:{
+            //             items:1,
+            //         },
+            //         400:{
+            //             items:3,
+            //             nav:true,
+            //         }
+            //     }
+            // });
+
+            let owl2 = $('.owl-carousel');
+                owl2.owlCarousel({
+                    items:2,
+                    loop:true,
+                    margin:10,
+                    // autoplay:true,
+                    // autoplayTimeout:5000,
+                    autoplayHoverPause:true
+                });
+
+            $('.campa').mouseover(function(){
+                $('.punto').show();
+            });
+
+            $('.campa').mouseout(function(){
+                $('.punto').hide();
+            
+            });
     </script>
 </body>
 </html>

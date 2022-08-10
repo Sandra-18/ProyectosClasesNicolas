@@ -392,8 +392,40 @@ body{
         left: 65%;
         top: -3vh;
     }
-    .contenedorhijo{
+    .contenedor4{
         height: 30vh;
+    }
+    .viewed {
+        font-family: 'Roboto';
+        font-style: italic;
+        font-size: 16px;
+        color: #343A40;
+    }
+    .contAbajo4{
+        width: 100%;
+        display: flex;
+    }
+    .contlike{
+        display: flex;
+        justify-content: end;
+    }
+    .like {
+        width: 24px;
+        height: 24px;
+        background: #FFFFFF;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    svg.bi.bi-heart {
+        width: 50%;
+    }
+    path {
+        color: #FF5500;
+    }
+    .item{
+        width: 45%;
     }
     
     
